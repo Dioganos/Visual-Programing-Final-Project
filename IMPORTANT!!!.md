@@ -1,5 +1,5 @@
 # Visual-Programing-Final-Project
-Visual Programing Final Project (ELECTRON-NODE.JS-HTML-JS-CSS)
+Visual Programing Final Project
 
 Languages :
 
