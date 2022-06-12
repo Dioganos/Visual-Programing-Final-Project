@@ -1,5 +1,7 @@
 // html sayfasında sıradaki hamleyi belirleyen elementi çektiğimiz kısım.
 const hamle = document.getElementById("siradakiHamle");
+let hamlesayisi = 0;
+let kazananvar = false;
 // tüm oyun için gerekli olan fonksiyon.
 function xoYaz(button){
     
@@ -27,37 +29,49 @@ function xoYaz(button){
     // bu kısımda satır, sütun ve çarpraz şekilde x ve o'ların bitiş koşuluna uygun bir şekilde sıralanıp sıralanmadığını kontrol ediyoruz.
     if(button1 == "X" && button2 == "X" && button3 == "X" || button1 == "O" && button2 == "O" && button3 == "O"){
         alert("Kazanan = " + document.getElementById(button).innerHTML);
+        kazananvar = true;
         window.location.reload();
     }
     if(button1 == "X" && button5 == "X" && button9 == "X" || button1 == "O" && button5 == "O" && button9 == "O"){
         alert("Kazanan = " + document.getElementById(button).innerHTML);
+        kazananvar = true;
         window.location.reload();
     }
     if(button1 == "X" && button4 == "X" && button7 == "X" || button1 == "O" && button4 == "O" && button7 == "O"){
         alert("Kazanan = " + document.getElementById(button).innerHTML);
+        kazananvar = true;
         window.location.reload();
     }
     if(button3 == "X" && button6 == "X" && button9 == "X" || button3 == "O" && button6 == "O" && button9 == "O"){
         alert("Kazanan = " + document.getElementById(button).innerHTML);
+        kazananvar = true;
         window.location.reload();
     }
     if(button2 == "X" && button5 == "X" && button8 == "X" || button2 == "O" && button5 == "O" && button8 == "O"){
         alert("Kazanan = " + document.getElementById(button).innerHTML);
+        kazananvar = true;
         window.location.reload();
     }
     if(button4 == "X" && button5 == "X" && button6 == "X" || button4 == "O" && button5 == "O" && button6 == "O"){
         alert("Kazanan = " + document.getElementById(button).innerHTML);
+        kazananvar = true;
         window.location.reload();
     }
     if(button3 == "X" && button5 == "X" && button7 == "X" || button3 == "O" && button5 == "O" && button7 == "O"){
         alert("Kazanan = " + document.getElementById(button).innerHTML);
+        kazananvar = true;
         window.location.reload();
     }
     if(button7 == "X" && button8 == "X" && button9 == "X" || button7 == "O" && button8 == "O" && button9 == "O"){
         alert("Kazanan = " + document.getElementById(button).innerHTML);
+        kazananvar = true;
         window.location.reload();
     }
-
+    hamlesayisi++;
+    if(hamlesayisi == 9 && kazananvar == false){
+        alert("Oyun Berabere");
+        window.location.reload();
+    }
 }
 function geriDon(){
     window.open("../mainpage.html","_self")
