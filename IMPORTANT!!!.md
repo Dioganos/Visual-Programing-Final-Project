@@ -14,6 +14,7 @@ Runtime Environment :
 Framework :
 
 -Electron
+
 First of all you need to setup Node.js and npm to your computer then download and add "node_modules" file to project for launch.
 When you done this step then open any terminal from your computer.
 Type -> 
