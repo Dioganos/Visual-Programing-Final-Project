@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TicTacToe</title>
+        <link rel="stylesheet" href="tictactoe.css">
+    </head>
+    <body>
+        <button id="geriDon" onclick="geriDon()" style="width: 100px; height: 30px; background-color: cyan;">Geri Dön</button>
+        <div>
+            <table>
+                <tr>
+                    <td colspan="3">Tic Tac Toe</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Sıradaki Hamle</td>
+                    <td id="siradakiHamle">X</td>
+                </tr>
+                <tr>
+                    <td name="btTd"><button name="toeButton" id="1" onclick="xoYaz(this.id)">&nbsp;</button></td>
+                    <td name="btTd"><button name="toeButton" id="2" onclick="xoYaz(this.id)">&nbsp;</button></td>
+                    <td name="btTd"><button name="toeButton" id="3" onclick="xoYaz(this.id)">&nbsp;</button></td>
+                </tr>
+                <tr>
+                    <td name="btTd"><button name="toeButton" id="4" onclick="xoYaz(this.id)">&nbsp;</button></td>
+                    <td name="btTd"><button name="toeButton" id="5" onclick="xoYaz(this.id)">&nbsp;</button></td>
+                    <td name="btTd"><button name="toeButton" id="6" onclick="xoYaz(this.id)">&nbsp;</button></td>
+                </tr>
+                <tr>
+                    <td name="btTd"><button name="toeButton" id="7" onclick="xoYaz(this.id)">&nbsp;</button></td>
+                    <td name="btTd"><button name="toeButton" id="8" onclick="xoYaz(this.id)">&nbsp;</button></td>
+                    <td name="btTd"><button name="toeButton" id="9" onclick="xoYaz(this.id)">&nbsp;</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="tictactoe.js"></script>
+    </body>
+</html>

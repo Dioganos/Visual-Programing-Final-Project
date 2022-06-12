@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        canvas{
+            box-shadow: rgb(17, 131, 32) 20px 10px 50px;
+        }
+    </style>    
+</head>
+
+<body id= "A" style="background-color: white;">
+    <button onclick="geriDon()" style="width: 100px; height: 30px; background-color: cyan;">Geri Dön</button>
+    <br>
+    <div style="padding-bottom: 2%;">
+        <button onclick="kolayYap()" style="width: 100px; height: 30px; background-color: cyan;">kolay</button>
+        <button onclick="ortaYap()" style="width: 100px; height: 30px; background-color: cyan;">orta</button>
+        <button onclick="zorYap()" style="width: 100px; height: 30px; background-color: cyan;">zor</button>
+    </div>
+    
+    <canvas style="border: 2px solid black;"id="yilan" width="400" height="400"/>
+    <script src="snake.js"></script>
+</body>
+</html>
